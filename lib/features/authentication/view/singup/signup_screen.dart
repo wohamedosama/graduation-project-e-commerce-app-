@@ -1,5 +1,5 @@
-import 'package:e_commerce/common/widget/login_footer.dart';
-import 'package:e_commerce/common/widget/my_divider.dart';
+import 'package:e_commerce/common/widget/login_signup/login_footer.dart';
+import 'package:e_commerce/common/widget/login_signup/my_divider.dart';
 import 'package:e_commerce/features/authentication/view/singup/verify_email.dart';
 import 'package:e_commerce/features/authentication/view/singup/widget/sign_up_button.dart';
 import 'package:e_commerce/features/authentication/view/singup/widget/signup_form.dart';
