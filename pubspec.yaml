@@ -38,6 +38,7 @@ dependencies:
   get_storage:
   smooth_page_indicator:
   salomon_bottom_bar:
+  carousel_slider:
   bloc:
   flutter_bloc:
   flutter:
