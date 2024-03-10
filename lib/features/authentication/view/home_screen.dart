@@ -1,5 +1,7 @@
 import 'package:e_commerce/common/widget/custom_shapes/container/primary_header_container.dart';
 import 'package:e_commerce/common/widget/custom_shapes/container/search_container.dart';
+import 'package:e_commerce/common/widget/layout/grid_layout.dart';
+import 'package:e_commerce/common/widget/products/products_card/products_cards_vertical.dart';
 import 'package:e_commerce/common/widget/texts/section_heading.dart';
 import 'package:e_commerce/features/shop/view/home/widget/home_appbar.dart';
 import 'package:e_commerce/features/shop/view/home/widget/home_categories.dart';
@@ -55,15 +57,27 @@ class HomeScreen extends StatelessWidget {
             //Body
             Padding(
               padding: const EdgeInsets.all(MySize.defaultSpace),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(MySize.md),
-                ),
-                child: const PromoSlider(banners: [
-                  MyImages.banner4,
-                  MyImages.banner7,
-                  MyImages.banner1
-                ]),
+              child: Column(
+                children: [
+                  //Promo Slider
+                  const PromoSlider(
+                    banners: [
+                      MyImages.banner4,
+                      MyImages.banner7,
+                      MyImages.banner1
+                    ],
+                  ),
+                  const SizedBox(height: MySize.spaceBtwItems),
+
+                  //Heading
+                  SectionHeading(title: 'Popular Products', onPressed: () {}),
+                  const SizedBox(height: MySize.spaceBtwItems),
+
+                  //Popular Products
+                  GridLayout(
+                      itemCount: 10,
+                      itemBuilder: (_, index) => const ProductCardVertical())
+                ],
               ),
             ),
           ],
@@ -72,3 +86,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+// child: const PromoSlider(banners: [
+// MyImages.banner4,
+// MyImages.banner7,
+// MyImages.banner1
+// ]),

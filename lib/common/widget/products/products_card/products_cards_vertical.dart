@@ -1,9 +1,9 @@
 import 'package:e_commerce/common/styles/shadow.dart';
 import 'package:e_commerce/common/widget/custom_shapes/container/rounded_container.dart';
-import 'package:e_commerce/common/widget/icons/circular_icon.dart';
+import 'package:e_commerce/common/widget/icon/circular_icon.dart';
 import 'package:e_commerce/common/widget/image/round_image.dart';
 import 'package:e_commerce/common/widget/texts/product-title_text.dart';
-import 'package:e_commerce/common/widget/texts/produts_price.dart';
+import 'package:e_commerce/common/widget/texts/products_price.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/images_string.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -22,7 +22,7 @@ class ProductCardVertical extends StatelessWidget {
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
-        height: 282,
+        height: 220,
         decoration: BoxDecoration(
           boxShadow: [ShadowStyle.verticalProductShadow],
           borderRadius: BorderRadius.circular(MySize.productImageRadius),

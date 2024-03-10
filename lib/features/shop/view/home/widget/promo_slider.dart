@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_commerce/common/widget/custom_shapes/container/circular_container.dart';
-import 'package:e_commerce/common/widget/images/round_image.dart';
+import 'package:e_commerce/common/widget/image/round_image.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
