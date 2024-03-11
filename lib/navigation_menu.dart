@@ -20,9 +20,9 @@ class _NavigationMenuState extends State<NavigationMenu> {
 
   final List<Widget> widgetOptions = const [
     HomeScreen(),
+    StoreScreen(),
     Setting(),
     Profile(),
-    Store(),
   ];
 
   @override
