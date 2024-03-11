@@ -26,7 +26,7 @@ class ProductCardVertical extends StatelessWidget {
         decoration: BoxDecoration(
           boxShadow: [ShadowStyle.verticalProductShadow],
           borderRadius: BorderRadius.circular(MySize.productImageRadius),
-          color: dark ? MyColors.dark : MyColors.white,
+          color: dark ? MyColors.darkerGrey : MyColors.white,
         ),
         child: Column(
           children: [
@@ -97,35 +97,41 @@ class ProductCardVertical extends StatelessWidget {
                       )
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      //Price
-                      const ProductPrice(price: '35.0'),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: MyColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(MySize.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(MySize.productImageRadius),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          height: MySize.iconLg * 1.2,
-                          width: MySize.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: MyColors.white,
-                            ),
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
                 ],
               ),
+            ),
+            const Spacer(),
+            //Price
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                //Price
+                const Padding(
+                  padding: EdgeInsets.only(left: MySize.sm),
+                  child: ProductPrice(price: '35.0'),
+                ),
+
+                //add to Cart Button
+                Container(
+                  decoration: const BoxDecoration(
+                    color: MyColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(MySize.cardRadiusMd),
+                      bottomRight: Radius.circular(MySize.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    height: MySize.iconLg * 1.2,
+                    width: MySize.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: MyColors.white,
+                      ),
+                    ),
+                  ),
+                )
+              ],
             ),
           ],
         ),
