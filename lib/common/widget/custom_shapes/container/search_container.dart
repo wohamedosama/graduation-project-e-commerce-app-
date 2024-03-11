@@ -13,12 +13,14 @@ class SearchContainer extends StatelessWidget {
     this.showBackGround = true,
     this.showBorder = true,
     this.onTap,
+    this.padding = const EdgeInsets.symmetric(horizontal: MySize.defaultSpace),
   });
 
   final String text;
   final IconData? icon;
   final bool showBackGround, showBorder;
   final VoidCallback? onTap;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class SearchContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: MySize.defaultSpace),
+        padding: padding,
         child: Container(
           width: HelperFunction.screenWidth(context),
           padding: const EdgeInsets.all(MySize.md),
