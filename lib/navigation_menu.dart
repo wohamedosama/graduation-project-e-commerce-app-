@@ -1,7 +1,7 @@
-import 'package:e_commerce/features/authentication/view/home_screen.dart';
-import 'package:e_commerce/features/authentication/view/profile.dart';
-import 'package:e_commerce/features/authentication/view/setting.dart';
-import 'package:e_commerce/features/authentication/view/store.dart';
+import 'package:e_commerce/features/shop/view/home/widget/home_screen.dart';
+import 'package:e_commerce/features/shop/view/profile_screen.dart';
+import 'package:e_commerce/features/shop/view/setting_screen.dart';
+import 'package:e_commerce/features/shop/view/store_screen.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
@@ -21,8 +21,8 @@ class _NavigationMenuState extends State<NavigationMenu> {
   final List<Widget> widgetOptions = const [
     HomeScreen(),
     StoreScreen(),
-    Setting(),
-    Profile(),
+    ProfileScreen(),
+    SettingScreen(),
   ];
 
   @override
