@@ -3,13 +3,14 @@ import 'package:e_commerce/common/widget/custom_shapes/container/rounded_contain
 import 'package:e_commerce/common/widget/icon/circular_icon.dart';
 import 'package:e_commerce/common/widget/image/round_image.dart';
 import 'package:e_commerce/common/widget/texts/product-title_text.dart';
-import 'package:e_commerce/common/widget/texts/products_price.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/images_string.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+
+import '../../texts/produts_price.dart';
 
 class ProductCardVertical extends StatelessWidget {
   const ProductCardVertical({super.key});
@@ -34,11 +35,10 @@ class ProductCardVertical extends StatelessWidget {
             RoundedContainer(
               height: 180,
               padding: const EdgeInsets.all(MySize.sm),
-              backgroundColor: dark ? MyColors.dark : MyColors.white,
               child: Stack(
                 children: [
                   //Product Image
-                  const RoundedImage(
+                  RoundedImage(
                     imageUrl: MyImages.productImage1,
                     applyImageRadius: true,
                   ),
@@ -101,17 +101,13 @@ class ProductCardVertical extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            //Price
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 //Price
                 const Padding(
-                  padding: EdgeInsets.only(left: MySize.sm),
-                  child: ProductPrice(price: '35.0'),
-                ),
-
-                //add to Cart Button
+                    padding: EdgeInsets.only(left: MySize.sm),
+                    child: ProductPrice(price: '35.0')),
                 Container(
                   decoration: const BoxDecoration(
                     color: MyColors.dark,

@@ -17,7 +17,7 @@ class SectionHeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Row(
       children: [
         Text(
           title,

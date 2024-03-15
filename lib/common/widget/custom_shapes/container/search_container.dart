@@ -20,7 +20,7 @@ class SearchContainer extends StatelessWidget {
   final IconData? icon;
   final bool showBackGround, showBorder;
   final VoidCallback? onTap;
-  final EdgeInsetsGeometry padding;
+  final EdgeInsets padding;
 
   @override
   Widget build(BuildContext context) {
