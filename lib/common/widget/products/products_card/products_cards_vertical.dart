@@ -1,6 +1,6 @@
 import 'package:e_commerce/common/styles/shadow.dart';
 import 'package:e_commerce/common/widget/custom_shapes/container/rounded_container.dart';
-import 'package:e_commerce/common/widget/icon/circular_icon.dart';
+import 'package:e_commerce/common/widget/icons/circular_icon.dart';
 import 'package:e_commerce/common/widget/image/round_image.dart';
 import 'package:e_commerce/common/widget/texts/product-title_text.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
@@ -33,12 +33,14 @@ class ProductCardVertical extends StatelessWidget {
           children: [
             //Thumbnails, wishlist Button,Discount tag,
             RoundedContainer(
+              backgroundColor: dark ? MyColors.dark : MyColors.white,
               height: 180,
               padding: const EdgeInsets.all(MySize.sm),
               child: Stack(
                 children: [
                   //Product Image
                   RoundedImage(
+                    backgroundColor: dark ? MyColors.dark : MyColors.white,
                     imageUrl: MyImages.productImage1,
                     applyImageRadius: true,
                   ),
