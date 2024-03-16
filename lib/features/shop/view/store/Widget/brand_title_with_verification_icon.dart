@@ -5,8 +5,8 @@ import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class BrandTitleWithVerificationIcon extends StatelessWidget {
-  const BrandTitleWithVerificationIcon({
+class BrandTitleWithVerification extends StatelessWidget {
+  const BrandTitleWithVerification({
     super.key,
     required this.title,
     this.maxLine = 1,
@@ -29,12 +29,11 @@ class BrandTitleWithVerificationIcon extends StatelessWidget {
       children: [
         Flexible(
           child: BrandTitleText(
-            title: title,
-            maxLine: maxLine,
-            color: textColor,
-            textAlign: textAlign,
-            brandTextSize: brandTextSize,
-          ),
+              title: title,
+              color: textColor,
+              maxLines: maxLine,
+              textAlign: textAlign,
+              brandTextSize: brandTextSize),
         ),
         const SizedBox(width: MySize.xs),
         Icon(

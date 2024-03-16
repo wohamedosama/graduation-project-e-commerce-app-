@@ -10,8 +10,8 @@ class RoundedContainer extends StatelessWidget {
     this.radius = MySize.borderRadiusLg,
     this.child,
     this.showBorder = false,
-    this.borderColor = MyColors.white,
-    this.backgroundColor = MyColors.borderPrimary,
+    this.borderColor = MyColors.borderPrimary,
+    this.backgroundColor = MyColors.white,
     this.padding,
     this.margin,
   });

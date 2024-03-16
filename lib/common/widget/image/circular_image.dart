@@ -1,30 +1,46 @@
-import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/images_string.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class CircularImage extends StatelessWidget {
   const CircularImage({
     super.key,
-    required this.dark,
+    this.width = 56,
+    this.height = 56,
+    this.padding = MySize.sm,
+    this.backgroundColor,
+    this.overlayColor,
+    this.isNetworkImage = false,
+    required this.image,
+    this.fit = BoxFit.cover,
   });
 
-  final bool dark;
+  final double width, height, padding;
+  final Color? backgroundColor;
+  final Color? overlayColor;
+  final bool isNetworkImage;
+  final String image;
+  final BoxFit? fit;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 56,
-      width: 56,
-      padding: const EdgeInsets.all(MySize.sm),
+      height: height,
+      width: width,
+      padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        color: dark ? MyColors.dark : MyColors.white,
+        color: backgroundColor,
         borderRadius: BorderRadius.circular(100),
       ),
-      child: Image.asset(
-        MyImages.clothIcon,
-        color: dark ? MyColors.white : MyColors.dark,
+      child: Center(
+        child: Image(
+          image: isNetworkImage
+              ? NetworkImage(image)
+              : AssetImage(image) as ImageProvider,
+          color: overlayColor,
+          fit: fit,
+        ),
       ),
     );
   }
 }
+//dark ? MyColors.dark : MyColors.white,
