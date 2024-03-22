@@ -10,7 +10,7 @@ class VerticalImageText extends StatelessWidget {
     required this.title,
     required this.image,
     this.textColor = MyColors.white,
-    this.backgroundColor = MyColors.white,
+    this.backgroundColor,
   });
 
   final String title, image;
@@ -41,7 +41,7 @@ class VerticalImageText extends StatelessWidget {
               child: Center(
                 child: Image.asset(
                   image,
-                  color: dark ? MyColors.dark : MyColors.dark,
+                  color: dark ? MyColors.white : MyColors.dark,
                   fit: BoxFit.cover,
                 ),
               ),

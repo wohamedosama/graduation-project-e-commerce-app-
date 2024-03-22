@@ -15,5 +15,6 @@ class AppRouter {
           builder: (context) => const LoginScreen(),
         );
     }
+    return null;
   }
 }
