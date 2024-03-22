@@ -66,6 +66,7 @@ class ProductCardVertical extends StatelessWidget {
                     top: 0,
                     right: 0,
                     child: CircularIcon(
+                      backgroundColor: Colors.transparent,
                       icon: Iconsax.heart5,
                       color: Colors.red,
                     ),
