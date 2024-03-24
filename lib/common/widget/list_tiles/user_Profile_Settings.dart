@@ -5,8 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class UserProfileSettings extends StatelessWidget {
-  const UserProfileSettings({super.key, this.onPressed});
-  final VoidCallback? onPressed;
+  const UserProfileSettings({super.key, required this.onPressed});
+
+  final VoidCallback onPressed;
+
   @override
   Widget build(BuildContext context) {
     return ListTile(
