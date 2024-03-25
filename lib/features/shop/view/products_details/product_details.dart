@@ -1,4 +1,5 @@
 import 'package:e_commerce/features/shop/view/products_details/widget/product_image_slider.dart';
+import 'package:e_commerce/features/shop/view/products_details/widget/product_meta_data.dart';
 import 'package:flutter/material.dart';
 
 class ProductsDetails extends StatelessWidget {
@@ -11,6 +12,7 @@ class ProductsDetails extends StatelessWidget {
         child: Column(
           children: [
             ProductsImageSlider(),
+            ProductMetaData(),
           ],
         ),
       ),
