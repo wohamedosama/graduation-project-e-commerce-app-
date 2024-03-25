@@ -3,6 +3,8 @@ import 'package:e_commerce/common/widget/custom_shapes/container/rounded_contain
 import 'package:e_commerce/common/widget/icons/circular_icon.dart';
 import 'package:e_commerce/common/widget/image/round_image.dart';
 import 'package:e_commerce/common/widget/texts/product-title_text.dart';
+import 'package:e_commerce/common/widget/texts/product_price.dart';
+import 'package:e_commerce/features/shop/view/products_details/product_details.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/images_string.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -10,16 +12,20 @@ import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../texts/produts_price.dart';
-
 class ProductCardVertical extends StatelessWidget {
-  const ProductCardVertical({super.key});
+  const ProductCardVertical({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     final dark = HelperFunction.isDark(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ProductsDetails(),
+          )),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
