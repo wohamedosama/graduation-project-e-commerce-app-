@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';

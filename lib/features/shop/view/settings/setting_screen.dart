@@ -1,11 +1,11 @@
-import 'package:e_commerce/common/widget/app_bar/app_bar.dart';
-import 'package:e_commerce/common/widget/custom_shapes/container/primary_header_container.dart';
-import 'package:e_commerce/common/widget/list_tiles/setting_menu.dart';
-import 'package:e_commerce/common/widget/list_tiles/user_Profile_Settings.dart';
-import 'package:e_commerce/common/widget/texts/section_heading.dart';
-import 'package:e_commerce/features/personalization/view/profile/profile.dart';
-import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/sizes.dart';
+import '../../../../common/widget/app_bar/app_bar.dart';
+import '../../../../common/widget/custom_shapes/container/primary_header_container.dart';
+import '../../../../common/widget/list_tiles/setting_menu.dart';
+import '../../../../common/widget/list_tiles/user_Profile_Settings.dart';
+import '../../../../common/widget/texts/section_heading.dart';
+import '../../../personalization/view/profile/profile.dart';
+import '../../../../utils/constants/colors.dart';
+import '../../../../utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 

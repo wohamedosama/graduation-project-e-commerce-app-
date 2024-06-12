@@ -1,13 +1,13 @@
-import 'package:e_commerce/common/widget/custom_shapes/container/primary_header_container.dart';
-import 'package:e_commerce/common/widget/custom_shapes/container/search_container.dart';
-import 'package:e_commerce/common/widget/layout/grid_layout.dart';
-import 'package:e_commerce/common/widget/products/products_card/products_cards_vertical.dart';
-import 'package:e_commerce/common/widget/texts/section_heading.dart';
-import 'package:e_commerce/features/shop/view/home/widget/home_appbar.dart';
-import 'package:e_commerce/features/shop/view/home/widget/home_categories.dart';
-import 'package:e_commerce/features/shop/view/home/widget/promo_slider.dart';
-import 'package:e_commerce/utils/constants/images_string.dart';
-import 'package:e_commerce/utils/constants/sizes.dart';
+import '../../../../common/widget/custom_shapes/container/primary_header_container.dart';
+import '../../../../common/widget/custom_shapes/container/search_container.dart';
+import '../../../../common/widget/layout/grid_layout.dart';
+import '../../../../common/widget/products/products_card/products_cards_vertical.dart';
+import '../../../../common/widget/texts/section_heading.dart';
+import 'widget/home_appbar.dart';
+import 'widget/home_categories.dart';
+import 'widget/promo_slider.dart';
+import '../../../../utils/constants/images_string.dart';
+import '../../../../utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {

@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:e_commerce/common/widget/image/circular_image.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/images_string.dart';

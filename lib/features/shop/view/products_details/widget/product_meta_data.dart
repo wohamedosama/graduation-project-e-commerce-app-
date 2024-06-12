@@ -44,7 +44,7 @@ class ProductMetaData extends StatelessWidget {
               ),
               const SizedBox(width: MySize.spaceBtwItems),
               Text(
-                '\$250',
+                '250 EGP',
                 style: Theme.of(context)
                     .textTheme
                     .titleSmall!
@@ -55,11 +55,11 @@ class ProductMetaData extends StatelessWidget {
             ],
           ),
           const SizedBox(height: MySize.spaceBtwItems / 1.5),
-          const ProductTitleText(text: 'Samsung Note 10'),
+          const ProductTitleText(text: 'Green Nike Air Shoe'),
           const SizedBox(height: MySize.spaceBtwItems / 1.5),
           Row(
             children: [
-              const ProductTitleText(text: 'Status'),
+              const ProductTitleText(text: 'Nike'),
               const SizedBox(width: MySize.spaceBtwItems),
               Text('In Stock', style: Theme.of(context).textTheme.titleMedium)
             ],

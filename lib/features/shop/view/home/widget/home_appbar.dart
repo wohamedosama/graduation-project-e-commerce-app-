@@ -2,6 +2,7 @@ import 'package:e_commerce/common/widget/app_bar/app_bar.dart';
 import 'package:e_commerce/common/widget/products/cart_counter_Icons.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
+import 'package:e_commerce/utils/network/local/cache_helper.dart';
 import 'package:flutter/material.dart';
 
 class HomeAppbar extends StatelessWidget {
@@ -18,7 +19,7 @@ class HomeAppbar extends StatelessWidget {
                   .textTheme
                   .labelMedium!
                   .apply(color: MyColors.grey)),
-          Text(MyTexts.homeAppbarSubTitle,
+          Text('Mohamed Osama',
               style: Theme.of(context)
                   .textTheme
                   .labelMedium!
@@ -27,7 +28,9 @@ class HomeAppbar extends StatelessWidget {
       ),
       actions: [
         CartCounterIcon(
-          onPressed: () {},
+          onPressed: () {
+            CacheHelper.removeData(key: 'token');
+          },
           iconColor: MyColors.white,
         ),
       ],

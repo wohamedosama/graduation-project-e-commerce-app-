@@ -1,6 +1,7 @@
-import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/images_string.dart';
-import 'package:e_commerce/utils/constants/sizes.dart';
+import '../../../features/authentication/model/cubit/login_cubit/login_cubit.dart';
+import '../../../utils/constants/colors.dart';
+import '../../../utils/constants/images_string.dart';
+import '../../../utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class SocialButton extends StatelessWidget {
@@ -17,7 +18,9 @@ class SocialButton extends StatelessWidget {
             border: Border.all(color: MyColors.grey),
           ),
           child: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              LoginCubit.get(context).signInWithGoogle();
+            },
             icon: Image.asset(
               MyImages.google,
               width: MySize.iconMd,
