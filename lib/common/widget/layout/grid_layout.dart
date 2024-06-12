@@ -1,4 +1,4 @@
-import 'package:e_commerce/utils/constants/sizes.dart';
+import '../../../utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class GridLayout extends StatelessWidget {

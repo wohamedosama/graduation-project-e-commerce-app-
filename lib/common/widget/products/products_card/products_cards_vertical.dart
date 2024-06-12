@@ -1,14 +1,14 @@
-import 'package:e_commerce/common/styles/shadow.dart';
-import 'package:e_commerce/common/widget/custom_shapes/container/rounded_container.dart';
-import 'package:e_commerce/common/widget/icons/circular_icon.dart';
-import 'package:e_commerce/common/widget/image/round_image.dart';
-import 'package:e_commerce/common/widget/texts/product-title_text.dart';
-import 'package:e_commerce/common/widget/texts/product_price.dart';
-import 'package:e_commerce/features/shop/view/products_details/product_details.dart';
-import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/images_string.dart';
-import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import '../../../styles/shadow.dart';
+import '../../custom_shapes/container/rounded_container.dart';
+import '../../icons/circular_icon.dart';
+import '../../image/round_image.dart';
+import '../../texts/product-title_text.dart';
+import '../../texts/product_price.dart';
+import '../../../../features/shop/view/products_details/product_details.dart';
+import '../../../../utils/constants/colors.dart';
+import '../../../../utils/constants/images_string.dart';
+import '../../../../utils/constants/sizes.dart';
+import '../../../../utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 

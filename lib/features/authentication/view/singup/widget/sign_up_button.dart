@@ -1,4 +1,4 @@
-import 'package:e_commerce/utils/constants/text_strings.dart';
+import '../../../../../utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class SignUpButton extends StatelessWidget {

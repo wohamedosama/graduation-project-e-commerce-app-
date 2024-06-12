@@ -1,8 +1,8 @@
-import 'package:e_commerce/common/widget/app_bar/app_bar.dart';
-import 'package:e_commerce/common/widget/icons/circular_icon.dart';
-import 'package:e_commerce/common/widget/layout/grid_layout.dart';
-import 'package:e_commerce/common/widget/products/products_card/products_cards_vertical.dart';
-import 'package:e_commerce/utils/constants/sizes.dart';
+import '../../../../common/widget/app_bar/app_bar.dart';
+import '../../../../common/widget/icons/circular_icon.dart';
+import '../../../../common/widget/layout/grid_layout.dart';
+import '../../../../common/widget/products/products_card/products_cards_vertical.dart';
+import '../../../../utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 

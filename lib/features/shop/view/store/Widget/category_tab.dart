@@ -20,9 +20,9 @@ class CategoryTabs extends StatelessWidget {
           child: Column(
             children: [
               const BrandShowCase(images: [
-                MyImages.productImage11,
-                MyImages.productImage12,
-                MyImages.productImage13
+                MyImages.productImage1,
+                MyImages.productImage2,
+                MyImages.productImage3
               ]),
               const SizedBox(height: MySize.spaceBtwItems),
               SectionHeading(title: 'You might Like', onPressed: () {}),

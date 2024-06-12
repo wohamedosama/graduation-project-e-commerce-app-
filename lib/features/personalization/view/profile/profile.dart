@@ -1,9 +1,9 @@
-import 'package:e_commerce/common/widget/app_bar/app_bar.dart';
-import 'package:e_commerce/common/widget/image/circular_image.dart';
-import 'package:e_commerce/common/widget/texts/section_heading.dart';
-import 'package:e_commerce/features/personalization/view/profile/widget/profile_menu.dart';
-import 'package:e_commerce/utils/constants/images_string.dart';
-import 'package:e_commerce/utils/constants/sizes.dart';
+import '../../../../common/widget/app_bar/app_bar.dart';
+import '../../../../common/widget/image/circular_image.dart';
+import '../../../../common/widget/texts/section_heading.dart';
+import 'widget/profile_menu.dart';
+import '../../../../utils/constants/images_string.dart';
+import '../../../../utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 

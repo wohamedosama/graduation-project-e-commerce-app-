@@ -1,6 +1,6 @@
-import 'package:e_commerce/features/authentication/view/login/login_screen.dart';
-import 'package:e_commerce/features/authentication/view/onboarding/onboarding.dart';
-import 'package:e_commerce/utils/constants/string_router.dart';
+import 'features/authentication/view/login/login_screen.dart';
+import 'features/authentication/view/onboarding/onboarding.dart';
+import 'utils/constants/string_router.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {

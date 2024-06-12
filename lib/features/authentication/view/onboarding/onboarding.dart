@@ -1,10 +1,12 @@
-import 'package:e_commerce/features/authentication/view/login/login_screen.dart';
-import 'package:e_commerce/features/authentication/view/onboarding/widget/circular_button.dart';
-import 'package:e_commerce/features/authentication/view/onboarding/widget/on_boarding_dot_navigation.dart';
-import 'package:e_commerce/features/authentication/view/onboarding/widget/on_boarding_items.dart';
-import 'package:e_commerce/features/authentication/view/onboarding/widget/on_boarding_skip.dart';
-import 'package:e_commerce/utils/constants/images_string.dart';
-import 'package:e_commerce/utils/constants/text_strings.dart';
+import '../../../../constants.dart';
+import '../login/login_screen.dart';
+import 'widget/circular_button.dart';
+import 'widget/on_boarding_dot_navigation.dart';
+import 'widget/on_boarding_items.dart';
+import 'widget/on_boarding_skip.dart';
+import '../../../../utils/constants/images_string.dart';
+import '../../../../utils/constants/text_strings.dart';
+import 'package:e_commerce/utils/network/local/cache_helper.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -36,6 +38,18 @@ class OnBoardingScreenState extends State<OnBoardingScreen> {
   ];
 
   bool isLast = false;
+
+  void submit() async {
+    await CacheHelper.saveData(key: onBoarding, value: true).then((value) {
+      if (value) {
+        Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => const LoginScreen()),
+          (route) => false,
+        );
+      }
+    });
+  }
 
   @override
   void initState() {
@@ -77,9 +91,7 @@ class OnBoardingScreenState extends State<OnBoardingScreen> {
           OnBoardingSkip(
             text: MyTexts.skip,
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const LoginScreen();
-              }));
+              submit();
             },
           ),
 
@@ -92,11 +104,7 @@ class OnBoardingScreenState extends State<OnBoardingScreen> {
           CircularButton(
             onPressed: () {
               if (isLast) {
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginScreen()),
-                  (route) => false,
-                );
+                submit();
               } else {
                 pageController.nextPage(
                     duration: const Duration(milliseconds: 300),

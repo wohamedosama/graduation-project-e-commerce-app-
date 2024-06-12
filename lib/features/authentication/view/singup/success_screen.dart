@@ -1,6 +1,6 @@
-import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/constants/text_strings.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import '../../../../utils/constants/sizes.dart';
+import '../../../../utils/constants/text_strings.dart';
+import '../../../../utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 class SuccessScreen extends StatelessWidget {

@@ -1,11 +1,6 @@
-import 'package:e_commerce/common/widget/login_signup/login_footer.dart';
-import 'package:e_commerce/common/widget/login_signup/my_divider.dart';
-import 'package:e_commerce/features/authentication/view/singup/verify_email.dart';
-import 'package:e_commerce/features/authentication/view/singup/widget/sign_up_button.dart';
-import 'package:e_commerce/features/authentication/view/singup/widget/signup_form.dart';
-import 'package:e_commerce/features/authentication/view/singup/widget/terms_condition.dart';
-import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/constants/text_strings.dart';
+import 'widget/signup_form.dart';
+import '../../../../utils/constants/sizes.dart';
+import '../../../../utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -29,28 +24,7 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: MySize.defaultSpace),
 
               //Form
-              const SignUpForm(),
-              const SizedBox(height: MySize.spaceBtwInputFields),
-
-              //Terms & Conditions CheckBox
-              const TermsAndCondition(),
-              const SizedBox(height: MySize.spaceBtwSections),
-
-              //Sign UP Button
-              SignUpButton(onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const VerifyEmailScreen()),
-                );
-              }),
-              const SizedBox(height: MySize.spaceBtwSections),
-              //Divider
-              MyDivider(dividerText: MyTexts.orSignUpWith.toUpperCase()),
-              const SizedBox(height: MySize.spaceBtwSections),
-
-              //social Button
-              const SocialButton(),
+              SignUpForm(),
             ],
           ),
         ),

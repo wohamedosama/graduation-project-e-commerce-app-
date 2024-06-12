@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_function.dart';

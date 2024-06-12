@@ -1,10 +1,7 @@
 import 'package:e_commerce/common/styles/spacing_style.dart';
-import 'package:e_commerce/common/widget/login_signup/login_footer.dart';
-import 'package:e_commerce/common/widget/login_signup/my_divider.dart';
 import 'package:e_commerce/features/authentication/view/login/widget/login_form.dart';
 import 'package:e_commerce/features/authentication/view/login/widget/login_header.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -25,12 +22,8 @@ class LoginScreen extends StatelessWidget {
                 const LoginHeader(),
                 const SizedBox(height: MySize.spaceBtwSections),
                 //Create a Form
-                const LoginForm(),
+                LoginForm(),
                 //Divider
-                MyDivider(dividerText: MyTexts.orSignInWith.toUpperCase()),
-                const SizedBox(height: MySize.spaceBtwSections),
-                //Footer
-                const SocialButton(),
               ],
             ),
           ),

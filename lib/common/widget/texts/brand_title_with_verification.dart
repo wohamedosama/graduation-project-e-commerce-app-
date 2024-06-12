@@ -1,7 +1,7 @@
-import 'package:e_commerce/common/widget/texts/brand_title_text.dart';
-import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/enums.dart';
-import 'package:e_commerce/utils/constants/sizes.dart';
+import 'brand_title_text.dart';
+import '../../../utils/constants/colors.dart';
+import '../../../utils/constants/enums.dart';
+import '../../../utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 

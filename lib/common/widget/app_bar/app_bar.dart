@@ -1,4 +1,4 @@
-import 'package:e_commerce/utils/constants/sizes.dart';
+import '../../../utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -34,7 +34,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 icon: const Icon(Iconsax.arrow_left))
             : leadingIcon != null
                 ? IconButton(
-                    onPressed: leadingOnPressed, icon: Icon(leadingIcon))
+                    onPressed: leadingOnPressed,
+                    icon: Icon(leadingIcon),
+                  )
                 : null,
       ),
     );

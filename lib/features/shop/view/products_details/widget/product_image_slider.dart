@@ -12,8 +12,8 @@ import 'package:iconsax/iconsax.dart';
 class ProductsImageSlider extends StatelessWidget {
   const ProductsImageSlider({
     super.key,
-    this.productImage = MyImages.productImage12,
-    this.sliderImage = MyImages.productImage14,
+    this.productImage = MyImages.productImage1,
+    this.sliderImage = MyImages.productImage1,
   });
 
   final String productImage, sliderImage;

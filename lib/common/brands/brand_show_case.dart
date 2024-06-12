@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:e_commerce/common/brands/brand_card.dart';
 import 'package:e_commerce/common/widget/custom_shapes/container/rounded_container.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
