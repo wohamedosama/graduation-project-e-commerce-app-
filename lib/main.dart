@@ -5,9 +5,14 @@ import 'package:e_commerce/app_router.dart';
 import 'package:e_commerce/constants.dart';
 import 'package:e_commerce/features/authentication/view/login/login_screen.dart';
 import 'package:e_commerce/features/authentication/view/onboarding/onboarding.dart';
+import 'package:e_commerce/features/shop/model/cubit/product_cubit.dart';
+import 'package:e_commerce/features/shop/model/product_model/product_model.dart';
+import 'package:e_commerce/features/shop/model/repo.dart';
+import 'package:e_commerce/features/shop/view/products_details/widget/product_meta_data.dart';
 import 'package:e_commerce/my_bloc_observer.dart';
 import 'package:e_commerce/utils/constants/string_router.dart';
 import 'package:e_commerce/utils/network/local/cache_helper.dart';
+import 'package:e_commerce/utils/network/remote/dio_helper.dart';
 import 'package:e_commerce/utils/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +21,8 @@ import 'navigation_menu.dart';
 
 void main() async {
   Bloc.observer = MyBlocObserver();
+  WebServices webServices = WebServices();
+
   Widget? widget;
   WidgetsFlutterBinding.ensureInitialized();
   Platform.isAndroid

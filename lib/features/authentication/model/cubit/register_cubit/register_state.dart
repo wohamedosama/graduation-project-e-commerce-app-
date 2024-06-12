@@ -1,4 +1,4 @@
-import 'package:e_commerce/features/authentication/model/cubit/user_model/user_model.dart';
+import 'package:e_commerce/features/authentication/model/user_model/user_model.dart';
 import 'package:flutter/material.dart';
 
 @immutable

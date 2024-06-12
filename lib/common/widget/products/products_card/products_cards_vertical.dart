@@ -1,3 +1,8 @@
+// ignore_for_file: must_be_immutable
+
+import 'package:e_commerce/common/widget/layout/grid_layout.dart';
+import 'package:e_commerce/features/shop/model/product_model/product_model.dart';
+
 import '../../../styles/shadow.dart';
 import '../../custom_shapes/container/rounded_container.dart';
 import '../../icons/circular_icon.dart';
