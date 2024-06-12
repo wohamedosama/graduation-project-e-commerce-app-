@@ -1,5 +1,6 @@
 import 'package:e_commerce/common/widget/app_bar/app_bar.dart';
 import 'package:e_commerce/common/widget/products/cart_counter_Icons.dart';
+import 'package:e_commerce/features/authentication/view/login/login_screen.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:e_commerce/utils/network/local/cache_helper.dart';
@@ -29,7 +30,15 @@ class HomeAppbar extends StatelessWidget {
       actions: [
         CartCounterIcon(
           onPressed: () {
-            CacheHelper.removeData(key: 'token');
+            CacheHelper.removeData(key: 'token').then((value) {
+              if (value) {
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const LoginScreen()),
+                    (route) => false);
+              }
+            });
           },
           iconColor: MyColors.white,
         ),

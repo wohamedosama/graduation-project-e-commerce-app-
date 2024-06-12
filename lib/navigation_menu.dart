@@ -18,11 +18,11 @@ class NavigationMenu extends StatefulWidget {
 class _NavigationMenuState extends State<NavigationMenu> {
   int currentIndex = 0;
 
-  final List<Widget> widgetOptions = const [
+  final List<Widget> widgetOptions = [
     HomeScreen(),
-    StoreScreen(),
+    const StoreScreen(),
     WishListScreen(),
-    SettingScreen(),
+    const SettingScreen(),
   ];
 
   @override

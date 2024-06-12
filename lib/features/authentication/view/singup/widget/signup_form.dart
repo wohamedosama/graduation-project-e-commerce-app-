@@ -1,13 +1,11 @@
 // ignore_for_file: must_be_immutable
-
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:e_commerce/common/widget/form_field/text_form_field.dart';
 import 'package:e_commerce/features/authentication/model/cubit/register_cubit/register_cubit.dart';
 import 'package:e_commerce/features/authentication/model/cubit/register_cubit/register_state.dart';
-import 'package:e_commerce/features/authentication/model/cubit/user_model/user_model.dart';
-import 'package:e_commerce/features/authentication/view/login/login_screen.dart';
 import 'package:e_commerce/features/authentication/view/singup/widget/sign_up_button.dart';
 import 'package:e_commerce/features/authentication/view/singup/widget/terms_condition.dart';
+import 'package:e_commerce/navigation_menu.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:e_commerce/utils/helpers/flutter_toast/flutter_toast.dart';
@@ -15,7 +13,6 @@ import 'package:e_commerce/utils/network/local/cache_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconsax/iconsax.dart';
-
 import '../../../../../common/widget/login_signup/login_footer.dart';
 import '../../../../../common/widget/login_signup/my_divider.dart';
 
@@ -36,11 +33,15 @@ class SignUpForm extends StatelessWidget {
       child: BlocConsumer<RegisterCubit, RegisterState>(
         listener: (context, state) {
           if (state is RegisterSuccessState) {
-            // CacheHelper.saveData(
-            //     key: 'token', value: state.userLoginModel.token);
+            CacheHelper.saveData(
+                key: 'token', value: state.userLoginModel.token);
+            ShowFlutterToast.showToast(
+              message: 'Login Success Welcome In Our App',
+              state: ToastState.success,
+            );
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const LoginScreen()),
+              MaterialPageRoute(builder: (context) => const NavigationMenu()),
             );
           }
           if (state is RegisterFailureState) {

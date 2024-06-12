@@ -2,6 +2,7 @@ import 'package:e_commerce/common/brands/brand_show_case.dart';
 import 'package:e_commerce/common/widget/layout/grid_layout.dart';
 import 'package:e_commerce/common/widget/products/products_card/products_cards_vertical.dart';
 import 'package:e_commerce/common/widget/texts/section_heading.dart';
+import 'package:e_commerce/features/shop/model/product_model/product_model.dart';
 import 'package:e_commerce/utils/constants/images_string.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';

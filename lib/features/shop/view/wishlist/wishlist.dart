@@ -1,3 +1,5 @@
+import 'package:e_commerce/features/shop/model/product_model/product_model.dart';
+
 import '../../../../common/widget/app_bar/app_bar.dart';
 import '../../../../common/widget/icons/circular_icon.dart';
 import '../../../../common/widget/layout/grid_layout.dart';
@@ -7,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class WishListScreen extends StatelessWidget {
-  const WishListScreen({super.key});
+  WishListScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class WishListScreen extends StatelessWidget {
             children: [
               GridLayout(
                 itemCount: 5,
-                itemBuilder: (context, index) => const ProductCardVertical(),
+                itemBuilder: (context, index) => ProductCardVertical(),
               )
             ],
           ),

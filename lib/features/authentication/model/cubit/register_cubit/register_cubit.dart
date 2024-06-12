@@ -2,12 +2,10 @@ import 'package:e_commerce/constants.dart';
 import 'package:e_commerce/features/authentication/model/cubit/register_cubit/register_state.dart';
 import 'package:e_commerce/utils/constants/api_constants.dart';
 import 'package:e_commerce/utils/network/remote/dio_helper.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:e_commerce/features/authentication/model/cubit/user_model/user_model.dart';
-import 'package:e_commerce/utils/constants/api_constants.dart';
+import 'package:e_commerce/features/authentication/model/user_model/user_model.dart';
 
 class RegisterCubit extends Cubit<RegisterState> {
   RegisterCubit() : super(RegisterInitial());
